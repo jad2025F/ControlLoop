@@ -1,0 +1,39 @@
+{
+  "name": "controlloop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:task1": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/graph.test.js",
+    "test:task2": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/propagate.test.js",
+    "test:task3": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/health.test.js",
+    "test:task4": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/simulation.test.js",
+    "test:task5": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/diff.test.js",
+    "test:task6": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/history.test.js",
+    "test:task7": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/view-model.test.js",
+    "test:task8": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/demo/demo-controller.test.js",
+    "test": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/engine/graph.test.js && node .test-dist/tests/engine/propagate.test.js && node .test-dist/tests/engine/health.test.js && node .test-dist/tests/engine/simulation.test.js && node .test-dist/tests/engine/diff.test.js && node .test-dist/tests/engine/history.test.js && node .test-dist/tests/engine/view-model.test.js && node .test-dist/tests/demo/demo-controller.test.js && node .test-dist/tests/demo/demo-controller-simulation.test.js && node .test-dist/tests/demo/demo-controller-time-machine.test.js && node .test-dist/tests/demo/demo-controller-action-center.test.js && node .test-dist/tests/demo/demo-controller-polish.test.js",
+    "test:task9": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/demo/demo-controller-simulation.test.js",
+    "test:task10": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/demo/demo-controller-time-machine.test.js",
+    "test:task11": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/demo/demo-controller-action-center.test.js",
+    "test:task12": "node -e \"require('fs').rmSync('.test-dist',{recursive:true,force:true})\" && tsc -p tsconfig.test.json && node .test-dist/tests/demo/demo-controller-polish.test.js"
+  },
+  "dependencies": {
+    "@xyflow/react": "12.11.6",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.19.21",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "postcss": "8.5.28",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.8.3"
+  }
+}
